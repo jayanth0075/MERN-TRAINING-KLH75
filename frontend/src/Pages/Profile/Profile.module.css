@@ -1,0 +1,100 @@
+.profileWrapper {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.profileWrapper:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.headerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.avatar {
+  border: 3px solid #e7f5ff;
+  box-shadow: 0 4px 12px rgba(13, 110, 253, 0.15);
+}
+
+.infoItem {
+  padding: 12px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 1px solid #e9ecef;
+  transition: all 0.2s ease;
+}
+
+.infoItem:hover {
+  background: #f8f9fa;
+  border-color: #0d6efd;
+  box-shadow: 0 2px 8px rgba(13, 110, 253, 0.1);
+}
+
+.iconColor {
+  color: #0d6efd;
+}
+
+.infoCard {
+  transition: all 0.3s ease;
+  background: #ffffff;
+}
+
+.infoCard:hover {
+  background: #f0f7ff;
+  border-color: #0d6efd;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.1);
+}
+
+.statusCard {
+  background: linear-gradient(135deg, #d3f9d8 0%, #c3fac3 100%);
+  border-color: #51cf66;
+  transition: all 0.3s ease;
+}
+
+.statusCard:hover {
+  box-shadow: 0 4px 15px rgba(81, 207, 102, 0.2);
+  transform: translateY(-2px);
+}
+
+.icon {
+  color: #0d6efd;
+  transition: all 0.3s ease;
+}
+
+.infoCard:hover .icon {
+  color: #0dcaf0;
+  transform: scale(1.1) rotate(5deg);
+}
+
+@media (max-width: 576px) {
+  .profileCard {
+    padding: 30px 20px !important;
+  }
+
+  .avatar {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+  .nameText {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .profileContainer {
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .profileCard {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+  }
+}
